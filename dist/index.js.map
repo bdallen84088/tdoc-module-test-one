@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/app/index.ts"],"names":[],"mappings":";;;;;AAAA,0DAAqD;AACrD,2DAAsD","sourcesContent":["export * from './tdoc-test-one/tdoc-test-one.module';\r\nexport * from './tdoc-test-one/tdoc-test-one.service';"]}

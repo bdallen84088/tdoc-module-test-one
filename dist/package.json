@@ -1,0 +1,26 @@
+{
+  "name": "tdoc-module-test-one",
+  "version": "1.0.0",
+  "description": "Test Custom Module One",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bdallen84088/tdoc-module-test-one",
+    "email": "brian_allen@premierinc.com"
+  },
+  "author": "Brian Allen",
+  "license": "MIT",
+  "script": {
+    "transpile": "ngc",
+    "build": "npm run transpile"
+  },
+  "peerDependencies": {
+    "@angular/cli": "^6.0.3",
+    "@angular/common": "^6.0.2",
+    "@angular/core": "^6.0.2",
+    "typescript": "~2.7.2"
+  }
+}
