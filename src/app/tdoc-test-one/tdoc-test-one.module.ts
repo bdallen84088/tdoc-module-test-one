@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { tdocTestOneConfig } from './tdoc-test-one.config';
 
 @NgModule({
+    exports: [],
     imports: [
         CommonModule
     ],
