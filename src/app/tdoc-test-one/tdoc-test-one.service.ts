@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Severity } from './severity.enum';
+import { tdocTestOneConfig } from './tdoc-test-one.config';
 
 @Injectable()
 export class tdocTestOneService {
@@ -7,12 +8,18 @@ export class tdocTestOneService {
     private severity: Severity;
     private message: string;
     private timestamp: Date;
+    private applicationName: string;
 
-    constructor() {
+    constructor(private config: tdocTestOneConfig) {
         this.source = '';
         this.severity = 1;
         this.message = '';
         this.timestamp = new Date();
+        this.applicationName = 'No Name';
+
+        if (config) {
+            this.applicationName = config.applicationName;
+        }
 
     }
 
